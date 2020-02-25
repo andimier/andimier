@@ -1,0 +1,22 @@
+#cnt-articulo {
+	width: 90%;
+	height: auto;
+	padding: 0 5% 0 5%;
+}
+
+#cnt-articulo h1 {
+	font-size: 35px;
+}
+
+#cnt-articulo h2 {
+	font-size: 18px;
+}
+
+#cnt-articulo p {
+	font-size: 15px;
+
+}
+
+#cnt-articulo iframe {
+	padding: 20px 0 20px 0;
+}

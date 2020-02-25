@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	background-color:#ecedef;
+}
+
+#cnt-titulo{
+
+	
+}
+
+
+.ttprincipal h1{
+	color: black
+}
+
+#cnt-titulo p{
+	color:#000;
+	background-image:url('../imagenes/c-web.png');
+}
+
+
+.cntproyectos{
+	width:70%;
+	height:auto;
+	padding:0px 20px 0 20px;
+	margin:auto;
+}
+
+
+.cntproyecto{
+	float:left;
+	width:50%;
+	height:200px;
+	margin-bottom:100px;
+}
+
+.ico_proyecto{
+	float:left;
+	width:25%;
+	height:auto;
+}
+
+.ico_proyecto img{
+	width:100%;
+}
+
+.txt_proyecto{
+	float:left;
+	width:75%;
+	height:auto;
+}
+
+.txt_proyecto h1{
+	font-size:25px;
+	padding:0px 0 0 30px;
+	color:#999
+}
+
+
+
+.txt_proyecto h2{
+	font-size:18px;
+	padding:0 0 0 30px;
+	
+}
+.txt_proyecto h2 a{
+	color:#868482;
+	text-decoration:none;
+}
+.txt_proyecto h2 a:hover{
+	/*color:#669999*/
+	color:#d24750
+}

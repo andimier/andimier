@@ -1,0 +1,39 @@
+.ttprincipal h1 {
+	color: #689b9b;
+}
+
+#cnt-articulo {
+	width: 70%;
+	height: auto;
+	padding: 0 5% 0 5%;
+}
+
+
+#cnt-articulo img {
+	width: 100%;
+	padding: 40px 0 40px 0;
+}
+
+#cnt-articulo h1 {
+	font-size: 60px;
+	font-family: 'web_serveroffregular';
+	color: black;
+}
+
+#cnt-articulo h2 {
+	font-size: 30px;
+	font-family: 'web_serveroffregular';
+	color: black;
+}
+
+#cnt-articulo p {
+	font-size: 20px;
+	color: grey;
+	font-family: 'web_serveroffregular';
+	font-weight: 100;
+}
+
+
+#cnt-articulo iframe {
+	padding: 40px 0 40px 0;
+}

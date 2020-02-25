@@ -1,0 +1,262 @@
+body{
+    background-color: #97CDB5;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-family: 'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+h1{
+	font-family: 'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+p{
+	font-family: 'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+
+#cnt-titulo {
+	margin-bottom: 40px;
+}
+
+#banner{
+    position: relative;
+    width:100%;
+    height:auto;
+   /* background-color: azure;*/
+    overflow: hidden;
+}
+
+#fd-lineas{
+    position: absolute;
+    width: 200%;
+    height: auto;
+    top: 0;
+    left: 50%;
+	opacity:0;
+    /*background-color: aqua;*/
+}
+
+#fd-lineas img {
+    width: 100%;
+}
+
+#ilustracion{
+    position: absolute;
+    width:30%;
+    height:auto;
+    top:0;
+    left: 50%;
+	opacity:0;
+}
+
+#computador{
+	
+}
+
+#ilustracion img{
+    width: 100%;
+}
+
+#contenido{
+	position:relative;
+    width: 70%;
+    height: auto;
+	padding-top:40px;
+	padding-bottom:40px;
+    margin: 30px auto 0 auto;
+    /*background-color: aqua;*/
+}
+
+
+
+#franja-info{
+	position:relative;
+	width:100%;
+	height: auto;
+	padding:20px 0 30px 0;
+	margin: 0 0 50px;
+	/*background-color: #8cbca4*/
+}
+
+#franja-info p {
+	width:50%;
+	height:auto;
+	margin:auto;
+	text-align:center;
+	color: white;
+}
+
+#rayo-info {
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:-15px;
+	left:50%;
+	margin-left:-15px;
+	
+	background-image:url("../imagenes/rayo30B.png");
+	background-position:0;
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+
+
+
+.ttprincipal {
+	
+}
+
+.ttprincipal h1 {
+	font-size:25px;
+	color: #f9e70e;
+	margin: 0 0 20px 0;
+	font-family: 'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+.textos{
+    float: left;
+    width: 50%;
+    height: auto;
+	/*background-color: green;*/
+}
+
+.caja-texto{
+	position:relative;
+    width: auto;
+    height: auto;
+    padding: 15px;
+	
+}
+
+
+.caja-texto h1{
+	color:#508F91;
+	font-size:30px;
+	text-transform:uppercase;
+}
+
+.caja-texto h2{
+	color: white;
+	font-size:12px;
+	text-transform:uppercase;
+	font-family: 'Italicc', 'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+.caja-texto p{
+	margin:20px 0 0 0;
+	padding:0 10px 0 10px;
+	color:white;
+	font-size:18px;
+	
+	font-family:'web_serveroffregular','Open Sans Condensed', sans-serif;
+}
+
+.rayo{
+	position:absolute;
+	width:30px;
+	height:40px;
+	top:-50px;
+	left:50%;
+	margin-left:-35px;
+	
+	background-image:url("../imagenes/rayo.png");
+	background-position:0;
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+.circle1 {
+	position:absolute;
+	
+	width: 5px;
+	height: 5px; 
+	top:35px;
+	right:20px;
+	background-color: white;
+	opacity: .3;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+}
+
+.circle2 {
+	position:absolute;
+	
+	width: 5px;
+	height: 5px; 
+	top:35px;
+	left:20px;
+	background-color: white;
+	opacity: 0.3;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+}
+
+.circle-top {
+	position:absolute;
+	width: 5px;
+	height: 5px; 
+	top:-2.5px;
+	left:50%;
+	margin-left:-2.5px;
+	
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+}
+
+
+.circle-bottom {
+	position:absolute;
+	width: 5px;
+	height: 5px; 
+	bottom:-2.5px;
+	left:50%;
+	margin-left:-2.5px;
+	
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+}
+
+.bk-white{
+	background-color: white;
+}
+
+.bk-yellow{
+	background-color: yellow;
+}
+
+/*=============================*/
+
+
+.pd-left{
+	padding-left:50px;
+}
+
+.pd-right{
+	padding-right:50px;
+}
+
+
+
+.lnr-white{
+    border-right: 1px solid white;
+}
+
+.alignr {
+    text-align: right;
+}
+
+.txt-align{
+	text-align: right;
+}

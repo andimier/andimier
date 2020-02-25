@@ -1,0 +1,25 @@
+#cnt-titulo{
+
+}
+
+.cuadro1{
+	float:left;
+	width:50%;
+	height:auto;
+	margin:0;
+}
+
+
+
+.txt-proy h1 {
+	font-family: 'web_serveroffregular';
+	font-size:18px;
+	color: white;
+
+}
+
+.txt-proy h2 {
+	font-family: 'web_serveroffregular';
+	font-size:14px;
+	color: white;
+}

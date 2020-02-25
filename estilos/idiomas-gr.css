@@ -1,0 +1,68 @@
+/*============ IDIOMAS =================*/
+
+#idiomas-cnt {
+	position: absolute;
+	width: 190px;
+	height: 40px;
+	top: 5px;
+	left: 0px;
+	z-index: 500;
+}
+
+#idiomas-linea {
+	float: left;
+	width: 70px;
+	height: 20px;
+	border-bottom: 1px solid #669999;
+	
+}
+
+.idiomas-idioma {
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #669999;
+	font-family: 'web_serveroffregular',' Open Sans Condensed', 'sans-serif';
+	font-size: 16px;
+	line-height: 40px;
+	
+}
+
+
+.idiomas-idioma a { 
+	color:white; 
+	text-decoration: none;
+}
+
+.idiomas-margen-mundo {
+	margin-left: -5px;
+}
+
+
+.idiomas-margen1 {
+	margin-left: 70px;
+}
+
+.idiomas-hover {
+	cursor: pointer;
+	background-image: url('../imagenes/fondo-idiomas.png');
+	color: white;
+	background-repeat: no-repeat;
+	
+}
+
+.idiomas-hover:hover {
+	background-image: url('');
+	color: black;
+}
+
+
+#idiomas-idioma img{
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+/*=======================*/

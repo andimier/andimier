@@ -1,0 +1,20 @@
+
+/*============ IDIOMAS =================*/
+
+#idiomas-cnt {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 30px;
+	left: 82%;
+	z-index: 500;
+}
+
+#idiomas-linea {
+	display: none;
+	
+}
+
+.idiomas-margen-mundo {
+	margin-left: 0px;
+}

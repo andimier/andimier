@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+
+}
+
+.cnt_proyectos{
+	position:relative;
+	width:100%;
+	
+}
+
+.img_proyectos{
+	position:absolute;
+	top:50%;
+	left:50%;
+	opacity:0;
+	overflow:hidden;
+	/*border:1px solid #000*/
+}
+
+.img_proyectos img{
+	
+	
+}
+
+.imagen{
+	
+}
+
+.txt_proyectos{
+	position:fixed;
+	width:300px;
+	height:auto;
+	top:100%;
+	left:20px;
+}
+
+.txt_proyectos h1{
+	text-transform:capitalize;
+	font-size:25px;
+	
+}
+
+.txt_proyectos h2{
+	text-transform:capitalize;
+	font-size:35px;
+	
+}
+
+.txt_proyectos p{
+	color:#eee
+}
+
+.txt_proyectos a{
+	color:#000;
+	text-decoration:none;
+}
+
+.txt_proyectos a:hover{
+	color:#f00;
+	text-decoration:none;
+}

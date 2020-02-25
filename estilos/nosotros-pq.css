@@ -1,0 +1,85 @@
+#franja-info p {
+	width:87%;
+	font-size:14px;
+}
+
+
+#fd-lineas{
+
+	top: 20%;
+    width: 300%;
+}
+
+#ilustracion{
+    position: absolute;
+    width:70%;
+ 
+}
+
+
+#contenido{
+	position:relative;
+    width: 80%;
+    height: auto;
+	padding-top:40px;
+	padding-bottom:40px;
+    margin: 30px auto 0 auto;
+
+}
+
+.textos{
+    float: none;
+    width: 100%;
+}
+
+.caja-texto{
+	padding: 10px 10px 10px 10px;
+}
+.caja-texto h1{
+	color:#508F91;
+	font-size:20px;
+
+}
+
+.caja-texto p{
+	margin:10px 0 0 0;
+	padding:0 0 0 0;
+	font-size:16px;
+}
+
+.lnr-white{
+    border-right: none;
+}
+
+.circle1 {
+	position:absolute;
+	width: 5px;
+	height: 5px; 
+	top:35px;
+	left:-20px;
+}
+
+.circle2 {
+	position:absolute;
+	width: 5px;
+	height: 5px; 
+	top:35px;
+	left:-20px;
+}
+
+
+.alignr {
+    text-align: left;
+}
+
+.txt-align{
+	direction: ltr;
+}
+
+.pd-left{
+	padding-left:none;
+}
+
+.pd-right{
+	padding-right:none;
+}

@@ -1,0 +1,22 @@
+.contenedor1{
+	width:80%;
+	height:auto;
+	padding:0px 2.5% 0 2.5%;
+	margin:auto;
+	
+}
+
+#thumbs{
+	position:relative;
+	width:100%;
+	padding:0;
+	
+	
+}
+
+#cnt_video{
+
+	width:auto;
+	height:auto;
+	
+}

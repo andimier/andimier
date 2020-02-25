@@ -1,0 +1,40 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName andimier.com
+AuthUserFile /home/andimier/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/andimier/public_html/_vti_pvt/service.grp
+
+
+RewriteEngine On
+
+# Allow any files or directories that exist to be displayed directly
+#RewriteCond ${REQUEST_URI} ^.+$
+#RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g|png|js|css|swf|php|ico|txt|pdf|xml)$ [OR]
+#RewriteCond %{REQUEST_FILENAME} -f [OR]
+#RewriteCond %{REQUEST_FILENAME} -d [OR]
+#RewriteCond %{REQUEST_FILENAME} -l
+#RewriteRule ^ - [L]
+
+RewriteRule    ^en/?$   index.php  [NC,L]
+RewriteRule    ^(\w+(?:-\w+)*)/?$   index.php  [NC,L]
+
+RewriteRule    ^articulos/(\w+(?:-\w+)*)/?$  articulo.php  [NC,L]
+RewriteRule    ^blog/(\w+(?:-\w+)*)/?$  articulo.php  [NC,L]
+
+RewriteRule    ^grafico/(\w+(?:-\w+)*)/?$  proyecto-grafico.php  [NC,L]
+RewriteRule    ^graphic/(\w+(?:-\w+)*)/?$  proyecto-grafico.php  [NC,L]
+
+
+
+ 

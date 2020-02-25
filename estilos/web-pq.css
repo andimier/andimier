@@ -1,0 +1,42 @@
+.cntproyecto{
+	float:none;
+	width:100%;
+	height:auto;
+	margin-bottom:10px;
+	padding: 10px 0 20px 0;
+	
+	border-bottom:1px solid rgb(255,255,255)
+}
+
+.ico_proyecto{
+	float:none;
+	width:25%;
+	height:auto;
+	margin:auto;
+}
+
+.ico_proyecto img{
+	width:100%;
+}
+
+.txt_proyecto{
+	float:none;
+	width:100%;
+	height:auto;
+	margin:auto;
+	text-align:center;
+}
+
+.txt_proyecto h1{
+	font-size:25px;
+	padding:0px 0 0 0;
+	color:#999
+}
+
+
+
+.txt_proyecto h2{
+	font-size:18px;
+	padding:0 0 0 0;
+	
+}
