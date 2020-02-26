@@ -56,7 +56,7 @@
 		var area = document.createElement('div');
 		area.className = 'areas';
 		
-		var h1 = document.createElement('H1');
+		var h1 = document.createElement('H2');
 		var txtenlace = document.createTextNode(menuarr[i]['titulo-'+idioma]);
 		
 		h1.appendChild(txtenlace);

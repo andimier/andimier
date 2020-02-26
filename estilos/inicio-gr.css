@@ -146,7 +146,7 @@ body {
 	border-bottom:1px solid #ddd;
 }
 
-.areas{
+.areas {
 	width:100%;
 	height:25px;
 	margin:18px auto 0 auto;
@@ -159,15 +159,10 @@ body {
 	transition:background-color .5s, color .5s;
 	
 	cursor:pointer;
-
 }
 
-.areas h1{
+.areas h2 {
 	font-size:18px
-}
-
-.areas:hover{
-	
 }
 
 /* ============ NUEVOS ==========*/
@@ -306,7 +301,6 @@ body {
 	font-family: 'web_serveroffregular',' Open Sans Condensed', 'sans-serif';
 	color: black;
 	font-weight: 100;
-	
 }
 
 .contenido-cnt h1 {
