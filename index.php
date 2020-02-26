@@ -1,50 +1,5 @@
 <?php
 	require_once('requeridos/elementos-arr.php');
-	
-	function getLinkIdioma($valor, $idioma, $arg){
-		
-		$uri = array();
-		
-		for($i=0;$i<2;$i++){
-			//if($i!=$idioma){
-				array_push($uri, $arg[$i]['uri']);
-			//}
-		}
-	
-		return $uri;
-	}
-
-	function getIdioma($_uri, $elm_arr){
-		$_uri = str_replace('/andimier','', $_uri);
-		$idiomas = 2;
-		$idioma = NULL;
-		$lgj = 'es';
-		$idioma = 0;
-		$linkactual = NULL;
-		$archivo = NULL;
-		$lkidiomas = NULL;
-		
-		foreach ($elm_arr as $arg) { 
-			for($i = 0; $i < $idiomas; $i++){
-				if ($arg[$i]['uri'] == $_uri || $arg[$i]['uri'] . '/' == $_uri) {
-					$archivo = $arg[$i]['archivo'];
-					$linkactual = $arg[$i]['uri'];
-				
-					if ($i > 0) {
-						$lgj = 'en';
-						$idioma = 1;
-						$linkactual = $arg[$i]['uri'];
-					}
-					
-					$lkidiomas = getLinkIdioma($idiomas, $idioma, $arg);
-					
-					break;
-				}
-			}
-		}
-	
-		return array($lgj, $archivo, $idioma, $linkactual, $lkidiomas);
-	}
 
 	function getCurrentPageName() {
 		$current_uri = $_SERVER['PHP_SELF'];
@@ -53,62 +8,59 @@
 		return  preg_replace('/.php/', '', end($arr));
 	}
 
-	function getPage($current_page, $lang) {
+	function getPage($sectionName, $lang) {
 		global $elm_arr;
 
-		$page = $current_page === 'index' ? 'inicio' : $current_page;
-
-		return $elm_arr[$page][$lang]['archivo'];
+		return $elm_arr[$sectionName][$lang]['archivo'];
 	}
 
-	function getURI($current_page, $lang) {
+	function getURI($sectionName, $lang) {
 		global $elm_arr;
 
-		$page = $current_page === 'index' ? 'inicio' : $current_page;
-
-		return $elm_arr[$page][$lang]['uri'];
+		return $elm_arr[$sectionName][$lang]['uri'];
 	}
 
-	function getURIs($current_page) {
+	function getURIs($sectionName) {
 		global $elm_arr;
-
-		$page = $current_page == 'index' ? 'inicio' : $current_page;
 		
 		return [
-			$elm_arr[$page][0]['uri'],
-			$elm_arr[$page][1]['uri']
+			$elm_arr[$sectionName][0]['uri'],
+			$elm_arr[$sectionName][1]['uri']
 		];
 	}
 
 	function getLang() {
+		$lg = [
+			"lang-val" => 0,
+			"lang-str" => "es"
+		];
+
 		if (strpos($_SERVER['PHP_SELF'], 'en/')) {
-			return 1;
+			$lg['lang-val'] = 1;
+			$lg['lang-str'] = 'en';
 		}
 
-		return 0;
+		return $lg;
 	}
-	
-	
-	$_uri = strtolower($_SERVER['REQUEST_URI']); 
-	$valores = getIdioma($_uri, $elm_arr);
-	$lgj = $valores[0];
+
+	function getSection($currentPageName) {
+		return $currentPageName == 'index' ? 'inicio' : $currentPageName;
+	}
+
+	$lang = getLang();
+	$lgj = $lang['lang-str'];
+	$idioma = $lang['lang-val'];
 
 	$currentPageName = getCurrentPageName();
-	$archivo = getPage($currentPageName, getLang());
-	$seccion = getCurrentPageName();
-	//$seccion = str_replace(".php", "", $valores[1]);
-
-	$idioma = getLang();
-	//$linkactual = str_replace("/", "", $valores[3]);
-	$linkactual = getURI($currentPageName, getLang());
-
-	// $lkidiomas = $valores[4];
-	$lkidiomas = getURIs($currentPageName);
+	$sectionName = getSection($currentPageName);
+	$seccion = $sectionName;
 	
-	
+	$archivo = getPage($sectionName, $idioma);
+	$linkactual = getURI($sectionName, $idioma);
+	$lkidiomas = getURIs($sectionName);
+		
 	date_default_timezone_set('America/Bogota');
 	$hoy = date("F j, Y, g:i a");
 
+	require_once("cpo/".$archivo);
 ?>
-<?php require_once("cpo/".$archivo); ?>
-

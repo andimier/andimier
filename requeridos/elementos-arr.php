@@ -1,7 +1,5 @@
 <?php
-	
 	$elm_arr = array(
-	
 		'inicio' => array(
 			0 => array(
 				'archivo' => 'inicio.php',
