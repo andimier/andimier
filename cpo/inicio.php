@@ -47,11 +47,16 @@
 			<div id="nuevos-cnt-mv"></div>
 		</div>
 
+		<div id="react-test"></div>
+
 		
 		<?php require_once('requeridos/footer.php'); ?>
 		<?php require_once('requeridos/contacto.php'); ?>
 	</body>
 
+	<script src="js/lib/react.min.js"></script>
+	<script src="js/lib/react-dom.min.js"></script>
+	<script type="module" src="dist/js/bundle.js"></script>
 	<script>
 		var idioma = '<?php echo $lgj; ?>';
 	</script>
