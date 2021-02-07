@@ -2,10 +2,15 @@
 	require_once('requeridos/elementos-arr.php');
 
 	function getCurrentPageName() {
-		$current_uri = $_SERVER['PHP_SELF'];
-		$arr = explode('/', $current_uri);
+		$query_string = $_SERVER['QUERY_STRING'];
+		$arr = explode('=', $query_string);
+		$page = end($arr);
 
-		return  preg_replace('/.php/', '', end($arr));
+		if (empty($page)) {
+			return 'inicio';
+		}
+
+		return $page;
 	}
 
 	function getPage($sectionName, $lang) {
@@ -22,7 +27,7 @@
 
 	function getURIs($sectionName) {
 		global $elm_arr;
-		
+
 		return [
 			$elm_arr[$sectionName][0]['uri'],
 			$elm_arr[$sectionName][1]['uri']
@@ -54,11 +59,11 @@
 	$currentPageName = getCurrentPageName();
 	$sectionName = getSection($currentPageName);
 	$seccion = $sectionName;
-	
+
 	$archivo = getPage($sectionName, $idioma);
 	$linkactual = getURI($sectionName, $idioma);
 	$lkidiomas = getURIs($sectionName);
-		
+
 	date_default_timezone_set('America/Bogota');
 	$hoy = date("F j, Y, g:i a");
 
