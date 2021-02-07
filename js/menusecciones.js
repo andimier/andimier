@@ -34,7 +34,7 @@ var menuarr = [
 	{
 		'titulo-es':'web',
 		'titulo-en':'web',
-		'link-es':'sitios-web',
+		'link-es':'web',
 		'link-en':'websites',
 		'colorp':'#999',
 		'clase-mv': 'f-web'
@@ -99,9 +99,7 @@ for (b=0; b<menuarr.length; b++) {
 
 var arr = [];
 
-for(m=0; m<item.length; m++){
-
-
+for (m=0; m<item.length; m++) {
 	item[m].addEventListener('mouseover', function(){
 
 		var index = $(this).index();
@@ -157,7 +155,6 @@ if (enarray !== -1 && typeof seccion !== 'undefined'){
 		$('#menu p').css('color', 'grey');
 	}else{
 		$('#menu p').css('color', '#fff');
-
 	}
 
 	$('.mitem').each(function(){
@@ -167,41 +164,37 @@ if (enarray !== -1 && typeof seccion !== 'undefined'){
 
 cambioItem();
 
-		function cambioItem(){
-
-			$('.mitem').hover(function(){
-				$(this).css({backgroundImage:'url("imagenes/item2.png")'});
-				$('#dp').stop().animate({opacity: 1});
-			}, function(){
-				$(this).css({backgroundImage:elitem});
-				$('#dp').stop().animate({opacity: 0});
-				console.log(elitem)
-			}
-			);
-
-		}
+function cambioItem(){
+	$('.mitem').hover(function(){
+		$(this).css({backgroundImage:'url("imagenes/item2.png")'});
+		$('#dp').stop().animate({opacity: 1});
+	}, function(){
+		$(this).css({backgroundImage:elitem});
+		$('#dp').stop().animate({opacity: 0});
+		console.log(elitem)
+	});
+}
 
 
+// MENU MV
 
-		// MENU MV
+function crearMenuMv(){
 
-		function crearMenuMv(){
+	var listmenu = document.getElementById("list-menu-mv");
 
-			var listmenu = document.getElementById("list-menu-mv");
+	for(i=0;i<menuarr.length;i++){
 
-			for(i=0;i<menuarr.length;i++){
+		var li = document.createElement("LI");
+		li.className = menuarr[i]['clase-mv'];
 
-				var li = document.createElement("LI");
-				li.className = menuarr[i]['clase-mv'];
+		var a = document.createElement("A");
+		a.href = menuarr[i]['link-'+idioma];
+		a.innerHTML = menuarr[i]['titulo-'+idioma];
 
-				var a = document.createElement("A");
-				a.href = menuarr[i]['link-'+idioma];
-				a.innerHTML = menuarr[i]['titulo-'+idioma];
-
-				li.appendChild(a);
-				listmenu.appendChild(li);
-			}
-		}
+		li.appendChild(a);
+		listmenu.appendChild(li);
+	}
+}
 
 
 
