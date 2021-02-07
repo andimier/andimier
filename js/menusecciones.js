@@ -64,7 +64,6 @@ var menuarr = [
 		'colorp':'#999',
 		'clase-mv': 'f-contacto'
 	}
-
 ];
 
 
